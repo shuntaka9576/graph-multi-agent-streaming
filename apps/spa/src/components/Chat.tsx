@@ -30,7 +30,7 @@ function getAgentConfig(nodeId: string) {
 
 export function Chat() {
   const [messages, setMessages] = useState<Message[]>([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState('ヤン・ルカンとデミス・ハサビスのAGI実現へのアプローチの違いを説明してください');
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId] = useState(() => crypto.randomUUID());
   const abortControllerRef = useRef<AbortController | null>(null);
