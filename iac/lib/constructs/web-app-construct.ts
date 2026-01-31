@@ -130,6 +130,5 @@ export class WebAppConstruct extends Construct {
         stringValue: this.api.url,
       });
     }
-
   }
 }
