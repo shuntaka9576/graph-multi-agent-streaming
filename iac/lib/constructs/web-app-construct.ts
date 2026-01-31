@@ -131,10 +131,5 @@ export class WebAppConstruct extends Construct {
       });
     }
 
-    // Outputs
-    new cdk.CfnOutput(this, 'ApiGatewayUrl', {
-      value: this.api.url,
-      description: 'API Gateway URL',
-    });
   }
 }
