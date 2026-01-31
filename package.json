@@ -9,8 +9,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "deploy": "turbo build && bun --filter iac deploy",
-    "deploy:hotswap": "turbo build && bun --filter iac deploy:hotswap",
+    "deploy": "turbo build && bun --filter iac --elide-lines=0 deploy",
+    "deploy:hotswap": "turbo build && bun --filter iac --elide-lines=0 deploy:hotswap",
     "synth": "bun --filter iac synth",
     "lint": "turbo lint",
     "type-check": "bun --filter '*' type-check",
