@@ -30,11 +30,7 @@ export AGENT_RUNTIME_ARN_SSM_PARAM=/dev/agent-core-playground/agent-core/runtime
 
 ## デプロイ
 
-### CDK スタック構成
-
-```
-MainStack  # AgentCore + WebApp (Lambda Function URL)
-```
+`MainStack  # AgentCore + WebApp (APIGatway + Lambda) `
 
 ### デプロイ
 
