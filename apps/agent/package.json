@@ -1,0 +1,8 @@
+{
+  "name": "agent",
+  "scripts": {
+    "dev": "uv run python src/agent/main.py",
+    "lint": "uv run ruff check . && uv run ruff format --check .",
+    "fix": "uv run ruff check --fix . && uv run ruff format ."
+  }
+}

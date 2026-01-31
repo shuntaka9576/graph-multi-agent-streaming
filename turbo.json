@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {
+      "dependsOn": ["type-check", "//#spell-check"]
+    },
+    "type-check": {},
+    "//#spell-check": {},
+    "dev": {
+      "persistent": true,
+      "cache": false,
+      "passThroughEnv": ["*"]
+    }
+  }
+}

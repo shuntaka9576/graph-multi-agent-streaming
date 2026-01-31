@@ -1,0 +1,36 @@
+{
+  "name": "agent-core-playground",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "iac"
+  ],
+  "packageManager": "bun@1.3.6",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "deploy": "turbo build && bun --filter iac deploy",
+    "deploy:hotswap": "turbo build && bun --filter iac deploy:hotswap",
+    "synth": "bun --filter iac synth",
+    "lint": "turbo lint",
+    "type-check": "bun --filter '*' type-check",
+    "spell-check": "cspell lint . --cache --gitignore",
+    "lint:fmt": "oxfmt --check . && prettier --check '**/*.{json,yaml}'",
+    "lint:oxlint": "oxlint . --type-aware --type-check --deny-warnings",
+    "fix": "oxfmt . && prettier --write '**/*.{json,yaml}'"
+  },
+  "devDependencies": {
+    "cspell": "^9.6.0",
+    "lefthook": "^2.0.15",
+    "oxfmt": "^0.26.0",
+    "oxlint": "^1.41.0",
+    "oxlint-tsgolint": "^0.11.1",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "turbo": "^2.7.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "react-markdown": "^10.1.0"
+  }
+}

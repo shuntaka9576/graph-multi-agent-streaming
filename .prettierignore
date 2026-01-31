@@ -1,0 +1,6 @@
+**/.venv
+**/cdk.out
+**/dist
+.turbo
+**/target
+bun.lock

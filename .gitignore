@@ -1,0 +1,8 @@
+node_modules
+dist
+.venv
+.turbo
+.reference
+.cspellcache
+docs/.$architecture.drawio.png.bkp
+.envrc

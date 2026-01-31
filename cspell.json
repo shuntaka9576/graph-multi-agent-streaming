@@ -1,0 +1,28 @@
+{
+  "ignorePaths": ["bun.lock", "**/dist/**"],
+  "language": "en",
+  "words": [
+    "agentcore",
+    "bunfig",
+    "boto",
+    "hotswap",
+    "multiagent",
+    "certificatemanager",
+    "direnv",
+    "ecspresso",
+    "elasticloadbalancingv",
+    "elbv",
+    "envrc",
+    "jsonnet",
+    "oxfmt",
+    "oxlint",
+    "pyproject",
+    "selectbox",
+    "stcore",
+    "streamlit",
+    "tsgolint",
+    "venv"
+  ],
+  "flagWords": [],
+  "dictionaries": []
+}

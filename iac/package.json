@@ -1,0 +1,25 @@
+{
+  "name": "iac",
+  "type": "module",
+  "scripts": {
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy -c stageName=dev d-acp-main --require-approval never",
+    "deploy:hotswap": "cdk deploy --hotswap -c stageName=dev d-acp-main --require-approval never",
+    "destroy": "cdk destroy",
+    "lint": "oxlint --type-aware --type-check . && oxfmt --check .",
+    "fix": "oxlint --type-aware --type-check --fix . && oxfmt .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-bedrock-agentcore-alpha": "^2.235.0-alpha.0",
+    "aws-cdk-lib": "^2.235.0",
+    "constructs": "^10.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "aws-cdk": "^2.1101.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

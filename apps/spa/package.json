@@ -1,0 +1,27 @@
+{
+  "name": "spa",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "echo 'lint'"
+  },
+  "dependencies": {
+    "@streamdown/mermaid": "^1.0.1",
+    "@tanstack/react-router": "^1.120.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "streamdown": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.3.5"
+  }
+}
