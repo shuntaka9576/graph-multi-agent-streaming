@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Streamdown } from 'streamdown';
 
 interface AgentNode {
   nodeId: string;
@@ -350,7 +350,9 @@ export function Chat() {
                                       }}
                                     >
                                       {agent.content ? (
-                                        <ReactMarkdown>{agent.content}</ReactMarkdown>
+                                        <Streamdown isAnimating={agent.status === 'running'}>
+                                          {agent.content}
+                                        </Streamdown>
                                       ) : (
                                         <span style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                                           {agent.status === 'running' ? '処理中...' : '待機中'}
@@ -427,7 +429,9 @@ export function Chat() {
                                   }}
                                 >
                                   {agent.content ? (
-                                    <ReactMarkdown>{agent.content}</ReactMarkdown>
+                                    <Streamdown isAnimating={agent.status === 'running'}>
+                                      {agent.content}
+                                    </Streamdown>
                                   ) : (
                                     <span style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                                       {agent.status === 'running'
