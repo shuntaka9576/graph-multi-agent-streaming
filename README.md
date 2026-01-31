@@ -30,7 +30,7 @@ export AGENT_RUNTIME_ARN_SSM_PARAM=/dev/agent-core-playground/agent-core/runtime
 
 ## デプロイ
 
-`MainStack  # AgentCore + WebApp (APIGatway + Lambda) `
+`MainStack  # AgentCore + WebApp (APIGateway + Lambda) `
 
 ### デプロイ
 
