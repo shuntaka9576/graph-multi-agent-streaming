@@ -3,9 +3,13 @@ name = "agent-core-playground"
 version = "0.1.0"
 description = "Agent Core Playground"
 requires-python = ">=3.11"
+dependencies = ["agent"]
 
 [tool.uv.workspace]
 members = ["apps/agent"]
+
+[tool.uv.sources]
+agent = { workspace = true }
 
 [tool.ruff]
 line-length = 88
